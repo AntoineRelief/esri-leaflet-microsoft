@@ -1,1 +1,7 @@
 <div id="map"></div>
+<button *ngIf="!session" id="session-button" (click)="beginSession($event)">
+  Start session
+</button>
+<button *ngIf="session" id="session-button" (click)="endSession($event)">
+  End session
+</button>

@@ -8,3 +8,10 @@
   font-size: 14px;
   color: #323232;
 }
+
+#session-button {
+  z-index: 1000;
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+}

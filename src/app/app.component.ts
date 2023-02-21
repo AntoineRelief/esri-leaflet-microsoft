@@ -13,11 +13,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.oauthService.events.subscribe((event: any) => {
-      console.log(event);
+      // console.log(event);
     });
     this.oauthService.loadDiscoveryDocumentAndLogin().then(async () => {
       const token = sessionStorage.getItem('access_token');
-      console.log(token);
+      // console.log(token);
     });
   }
 }

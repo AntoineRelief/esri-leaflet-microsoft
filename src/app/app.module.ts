@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AuthConfig, OAuthModule, OAuthService } from 'angular-oauth2-oidc';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MapModule } from './components/map/map.module';
 
 const authConfig: AuthConfig = {
   issuer: 'https://login.microsoftonline.com/fbacd48d-ccf4-480d-baf0-31048368055f/v2.0',
@@ -33,7 +32,6 @@ const initializeAuth =
     AppRoutingModule,
     HttpClientModule,
     OAuthModule.forRoot(),
-    MapModule,
   ],
   providers: [
     {
